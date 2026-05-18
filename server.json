@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/librivox",
+  "title": "Librivox",
+  "description": "LibriVox public-domain audiobooks (~17000 titles in dozens of languages)",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/librivox",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-librivox",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/librivox/mcp"
+    }
+  ]
+}

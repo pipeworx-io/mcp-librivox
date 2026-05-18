@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-librivox",
+  "version": "0.1.0",
+  "description": "LibriVox public-domain audiobooks (~17000 titles in dozens of languages)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "librivox"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-librivox"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
