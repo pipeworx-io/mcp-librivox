@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-librivox",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "LibriVox MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-b8e73d24db0e6e530cfd9b30b743e2a4933b84e27c71599b94a5d3df95ff69bf",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-4e23f0c8634273f96a869051e1904cff42edddf98bf5df6b996172f5c7a139b9",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
