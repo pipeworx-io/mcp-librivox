@@ -1,0 +1,82 @@
+[
+  {
+    "name": "audiobooks",
+    "description": "Search LibriVox free public-domain audiobooks by title keyword, author name, or date added (YYYY-MM-DD); supports pagination via limit/offset. Returns book metadata including reader, language, URL, and chapter count.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Title keyword filter."
+        },
+        "author": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string",
+          "description": "YYYY-MM-DD"
+        },
+        "limit": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "audiobook",
+    "description": "Single audiobook by id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "authors",
+    "description": "Search LibriVox authors by last name or keyword; supports pagination via limit/offset. Returns author id, first/last name, and a link to their LibriVox profile.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  {
+    "name": "tracks",
+    "description": "LibriVox free public-domain audiobooks — the individual chapter tracks of one LibriVox recording project, given its project_id. Each track returns its section number, title, playtime, the volunteer reader who recorded it, file size and the direct MP3 URL. Answers which chapters are in a LibriVox audiobook and where to stream or download each one.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "project_id"
+      ]
+    }
+  }
+]
